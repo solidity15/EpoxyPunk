@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Epoxy Flooring Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-gray': '#1C1C1C',
+                        'accent-blue': '#007BFF',
+                        'accent-orange': '#FFA500'
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-montserrat text-gray-800">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center">
+            <h1 id="headerBusinessName" class="text-2xl font-bold text-dark-gray">Epoxy Punk</h1>
+        </div>
+        <div class="flex items-center">
+            <div class="bg-accent-blue text-white px-4 py-2 rounded-lg font-semibold">
+                📞 <span id="headerPhone">(226) 998-9819</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[68vh] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background with overlay -->
+        <div id="heroBackground" class="absolute inset-0 w-full h-full bg-gradient-to-r from-dark-gray via-gray-800 to-dark-gray">
+            <svg class="absolute inset-0 w-full h-full opacity-10" viewBox="0 0 100 100" preserveAspectRatio="none" fill="none">
+                <defs>
+                    <pattern id="floor-pattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <rect width="10" height="10" fill="url(#floor-gradient)"/>
+                        <circle cx="5" cy="5" r="0.2" fill="rgba(255,255,255,0.3)"/>
+                    </pattern>
+                    <linearGradient id="floor-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#007BFF;stop-opacity:0.3"/>
+                        <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0.3"/>
+                    </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#floor-pattern)"/>
+            </svg>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Affordable Epoxy<br>
+                <span class="text-accent-blue">Flooring Solutions</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">
+                <span class="text-accent-orange">Durable</span> • 
+                <span class="text-white">Beautiful</span> • 
+                <span class="text-accent-blue">Affordable</span>
+            </p>
+            <button onclick="scrollToContact()" class="bg-accent-orange hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Get a Free Quote
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-dark-gray">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center group">
+                    <div class="bg-accent-blue w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-orange transition-colors duration-300">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-dark-gray">Residential Epoxy Flooring</h3>
+                    <p class="text-gray-600 leading-relaxed">Transform your garage, basement, or home with beautiful, durable epoxy floors that last for years.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-accent-blue w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-orange transition-colors duration-300">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-dark-gray">Commercial Epoxy Coating</h3>
+                    <p class="text-gray-600 leading-relaxed">Professional-grade solutions for retail spaces, offices, and commercial facilities requiring high-traffic durability.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-accent-blue w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-orange transition-colors duration-300">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 11H7v9a2 2 0 002 2h6a2 2 0 002-2v-9h-2m-7 0V6a2 2 0 012-2h4a2 2 0 012 2v5m-7 0h8"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-dark-gray">Industrial Epoxy Floors</h3>
+                    <p class="text-gray-600 leading-relaxed">Heavy-duty industrial coatings designed to withstand extreme conditions and chemical exposure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-dark-gray">Why Choose Us</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-accent-orange w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-dark-gray">Long-lasting Finish</h3>
+                    <p class="text-gray-600">Our epoxy floors are built to last decades with proper maintenance.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-accent-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.82,11.69,4.82,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-dark-gray">Easy Maintenance</h3>
+                    <p class="text-gray-600">Simple cleaning with just soap and water keeps your floors looking new.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-accent-orange w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-dark-gray">Custom Designs</h3>
+                    <p class="text-gray-600">Choose from countless colors, patterns, and finishes to match your style.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-accent-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-dark-gray">Affordable Pricing</h3>
+                    <p class="text-gray-600">Competitive rates with transparent pricing and no hidden fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-dark-gray">Our Work</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- Residential Garages Card -->
+                <div onclick="openGallery('residential')" class="bg-gradient-to-br from-blue-200 to-blue-400 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden aspect-square cursor-pointer">
+                    <!-- Icon Section (2/3) -->
+                    <div class="h-2/3 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M5,11L6.5,6.5H17.5L19,11M17.5,16A1.5,1.5 0 0,1 16,14.5A1.5,1.5 0 0,1 17.5,13A1.5,1.5 0 0,1 19,14.5A1.5,1.5 0 0,1 17.5,16M6.5,16A1.5,1.5 0 0,1 5,14.5A1.5,1.5 0 0,1 6.5,13A1.5,1.5 0 0,1 8,14.5A1.5,1.5 0 0,1 6.5,16M18.92,6C18.72,5.42 18.16,5 17.5,5H6.5C5.84,5 5.28,5.42 5.08,6L3,12V20A1,1 0 0,0 4,21H5A1,1 0 0,0 6,20V19H18V20A1,1 0 0,0 19,21H20A1,1 0 0,0 21,20V12L18.92,6Z"/>
+                        </svg>
+                    </div>
+                    <!-- Text Section (1/3) -->
+                    <div class="h-1/3 bg-white p-4 flex flex-col justify-center text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Residential Garages</h3>
+                        <p class="text-gray-600 text-base">Transform your garage into a showroom space</p>
+                    </div>
+                </div>
+
+                <!-- Basements Card -->
+                <div onclick="openGallery('basements')" class="bg-gradient-to-br from-green-200 to-green-400 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden aspect-square cursor-pointer">
+                    <!-- Icon Section (2/3) -->
+                    <div class="h-2/3 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                        </svg>
+                    </div>
+                    <!-- Text Section (1/3) -->
+                    <div class="h-1/3 bg-white p-4 flex flex-col justify-center text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Basements</h3>
+                        <p class="text-gray-600 text-base">Moisture-resistant basement flooring solutions</p>
+                    </div>
+                </div>
+
+                <!-- Commercial Spaces Card -->
+                <div onclick="openGallery('commercial')" class="bg-gradient-to-br from-yellow-200 to-yellow-400 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden aspect-square cursor-pointer">
+                    <!-- Icon Section (2/3) -->
+                    <div class="h-2/3 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,7V3H2V21H22V7H12M6,19H4V17H6V19M6,15H4V13H6V15M6,11H4V9H6V11M6,7H4V5H6V7M10,19H8V17H10V19M10,15H8V13H10V15M10,11H8V9H10V11M10,7H8V5H10V7M20,19H12V17H14V15H12V13H14V11H12V9H20V19M18,11H16V13H18V11M18,15H16V17H18V15Z"/>
+                        </svg>
+                    </div>
+                    <!-- Text Section (1/3) -->
+                    <div class="h-1/3 bg-white p-4 flex flex-col justify-center text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Commercial Spaces</h3>
+                        <p class="text-gray-600 text-base">Professional-grade commercial flooring</p>
+                    </div>
+                </div>
+
+                <!-- Industrial Facilities Card -->
+                <div onclick="openGallery('industrial')" class="bg-gradient-to-br from-orange-200 to-orange-400 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden aspect-square cursor-pointer">
+                    <!-- Icon Section (2/3) -->
+                    <div class="h-2/3 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H16C14.89,22 14,21.1 14,20V19H8V20C8,21.1 7.11,22 6,22H2V20H4A1,1 0 0,0 5,19V5A1,1 0 0,0 4,4H2V2H6C7.11,2 8,2.9 8,4V5H14V4C14,2.9 14.89,2 16,2H20V4H18A1,1 0 0,0 17,5V7M9,6V18H15V6H9Z"/>
+                        </svg>
+                    </div>
+                    <!-- Text Section (1/3) -->
+                    <div class="h-1/3 bg-white p-4 flex flex-col justify-center text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Industrial Facilities</h3>
+                        <p class="text-gray-600 text-base">Heavy-duty industrial coating solutions</p>
+                    </div>
+                </div>
+
+                <!-- Retail Stores Card -->
+                <div onclick="openGallery('retail')" class="bg-gradient-to-br from-gray-200 to-gray-400 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden aspect-square cursor-pointer">
+                    <!-- Icon Section (2/3) -->
+                    <div class="h-2/3 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19,7H18V6A2,2 0 0,0 16,4H8A2,2 0 0,0 6,6V7H5A1,1 0 0,0 4,8V19A1,1 0 0,0 5,20H19A1,1 0 0,0 20,19V8A1,1 0 0,0 19,7M8,6H16V7H8V6M18,18H6V9H7V11H9V9H15V11H17V9H18V18Z"/>
+                        </svg>
+                    </div>
+                    <!-- Text Section (1/3) -->
+                    <div class="h-1/3 bg-white p-4 flex flex-col justify-center text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Retail Stores</h3>
+                        <p class="text-gray-600 text-base">Attractive retail space flooring designs</p>
+                    </div>
+                </div>
+
+                <!-- Workshops Card -->
+                <div onclick="openGallery('workshops')" class="bg-gradient-to-br from-purple-200 to-purple-400 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden aspect-square cursor-pointer">
+                    <!-- Icon Section (2/3) -->
+                    <div class="h-2/3 flex items-center justify-center">
+                        <svg class="w-24 h-24 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M21.71,20.29L20.29,21.71A1,1 0 0,1 18.88,21.71L7,9.85L11.24,5.61C11.64,5.21 12.27,5.21 12.68,5.61L18.39,11.32C18.79,11.72 18.79,12.35 18.39,12.76L21.71,16.08A1,1 0 0,1 21.71,17.5L21.71,20.29M13.41,9.17L8.75,4.5L5.92,7.33L10.58,12L13.41,9.17M4.33,8.75L1.5,11.58L6.16,16.25L9,13.42L4.33,8.75Z"/>
+                        </svg>
+                    </div>
+                    <!-- Text Section (1/3) -->
+                    <div class="h-1/3 bg-white p-4 flex flex-col justify-center text-center">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Workshops</h3>
+                        <p class="text-gray-600 text-base">Durable workshop and studio flooring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-dark-gray">What Our Customers Say</h2>
+
+
+            <!-- Dynamic Reviews Display -->
+            <div id="dynamicReviews" class="mb-16 hidden">
+                <h3 class="text-2xl font-semibold text-center text-dark-gray mb-8">Recent Customer Reviews</h3>
+                <div id="reviewsGrid" class="grid md:grid-cols-3 gap-8 mb-8"></div>
+                <div id="seeAllContainer" class="text-center hidden">
+                    <button id="seeAllBtn" onclick="toggleAllReviews()" class="bg-accent-blue hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                        See All Reviews (<span id="reviewCount">0</span>)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Write a Review Section -->
+            <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-6 text-center text-dark-gray">Share Your Experience</h3>
+                <form class="space-y-4" onsubmit="handleReviewSubmit(event)">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Rating</label>
+                            <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent">
+                                <option value="">Select Rating</option>
+                                <option value="5">★★★★★ (5 stars)</option>
+                                <option value="4">★★★★☆ (4 stars)</option>
+                                <option value="3">★★★☆☆ (3 stars)</option>
+                                <option value="2">★★☆☆☆ (2 stars)</option>
+                                <option value="1">★☆☆☆☆ (1 star)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Your Review</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent" placeholder="Tell others about your experience..."></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Add Photos (Optional)</label>
+                        <input type="file" multiple accept="image/*" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent">
+                        <p class="text-sm text-gray-500 mt-1">Upload photos of your completed project to share with others</p>
+                    </div>
+                    <button type="submit" class="w-full bg-accent-orange hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                        Submit Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-6xl w-full max-h-[90vh] overflow-hidden">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-6 border-b">
+                <h2 id="galleryTitle" class="text-2xl font-bold text-dark-gray">Gallery</h2>
+                <button onclick="closeGallery()" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+            </div>
+            
+            <!-- Admin Controls (Hidden by default) -->
+            <div id="adminControls" class="hidden p-4 bg-gray-50 border-b">
+                <div class="flex gap-4 items-center">
+                    <input type="file" id="imageUpload" accept="image/*" multiple class="hidden">
+                    <button onclick="document.getElementById('imageUpload').click()" class="bg-accent-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                        Upload Images
+                    </button>
+                    <span class="text-sm text-gray-600">Select multiple images to upload</span>
+                </div>
+            </div>
+
+    <!-- Admin Settings Modal -->
+    <div id="adminSettingsModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center p-6 border-b">
+                <h2 class="text-2xl font-bold text-dark-gray">Admin Settings</h2>
+                <button onclick="closeAdminSettings()" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+            </div>
+            
+            <div class="p-6 space-y-8">
+                <!-- Business Name Settings -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-4 text-dark-gray">Business Name</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Business Name</label>
+                            <input type="text" id="businessNameInput" value="Epoxy Punk" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent">
+                        </div>
+                        <button onclick="updateBusinessName()" class="bg-accent-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                            Update Business Name
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hero Background Settings -->
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-4 text-dark-gray">Hero Section Background</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Upload New Background Image</label>
+                            <input type="file" id="heroBackgroundUpload" accept="image/*" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent">
+                            <p class="text-sm text-gray-500 mt-1">Recommended: High resolution landscape image (1920x1080 or larger)</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <button onclick="uploadHeroBackground()" class="bg-accent-orange text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+                                Apply New Background
+                            </button>
+                            <button onclick="resetHeroBackground()" class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700">
+                                Reset to Original
+                            </button>
+                        </div>
+                        <div id="backgroundPreview" class="hidden">
+                            <p class="text-sm font-medium text-gray-700 mb-2">Preview:</p>
+                            <img id="backgroundPreviewImg" class="w-full h-32 object-cover rounded-lg border" alt="Background preview">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+            <!-- Gallery Content -->
+            <div class="p-6 overflow-y-auto max-h-[70vh]">
+                <div id="galleryGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Images will be loaded here -->
+                </div>
+                <div id="emptyGallery" class="text-center py-12 text-gray-500 hidden">
+                    <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19M19,19H5V5H19V19M13.96,12.29L11.21,15.83L9.25,13.47L6.5,17H17.5L13.96,12.29Z"/>
+                    </svg>
+                    <p class="text-lg">No images in this gallery yet</p>
+                    <p class="text-sm">Images will appear here once uploaded</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-dark-gray">Admin Login</h2>
+                <button onclick="closeAdminLogin()" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+            </div>
+            
+            <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Username</label>
+                    <input type="text" id="adminUsername" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                    <input type="password" id="adminPassword" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent">
+                </div>
+                <button type="submit" class="w-full bg-accent-blue hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                    Login
+                </button>
+            </form>
+            
+            <div id="loginError" class="hidden mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+                Invalid username or password
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 text-dark-gray">Get Your Free Quote Today</h2>
+                <p class="text-lg text-gray-600">Fill the form today and we will contact you within 24 hours, or contact us directly.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Form Section -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-dark-gray">Request Your Quote</h3>
+                    <form class="space-y-6" onsubmit="handleSubmit(event)">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all duration-200">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all duration-200">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all duration-200">
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Project Type</label>
+                                <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all duration-200">
+                                    <option value="">Select Project Type</option>
+                                    <option value="residential-garage">Residential Garage Floor</option>
+                                    <option value="basement-finish">Basement Finish</option>
+                                    <option value="metallic-flooring">Metallic Flooring</option>
+                                    <option value="industrial-flooring">Industrial Flooring</option>
+                                    <option value="custom-design">Custom Design</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Approximate Area (sq. ft.)</label>
+                                <input type="number" placeholder="e.g. 500" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all duration-200">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all duration-200" placeholder="Tell us about your project, square footage, timeline, etc..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent-orange hover:bg-orange-600 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Send Me Free Quote
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Why Us Section -->
+                <div class="space-y-8">
+                    <!-- Contact Information -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-dark-gray">Contact Us</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="bg-accent-orange w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-dark-gray">Phone</p>
+                                    <p id="contactPhone" class="text-gray-600">(226) 998-9819</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-accent-blue w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-dark-gray">Service Area</p>
+                                    <p class="text-gray-600">Toronto and GTA Areas</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Business Hours -->
+                        <div class="mt-8 p-6 bg-gradient-to-r from-accent-blue to-accent-orange rounded-lg text-white">
+                            <h4 class="font-semibold mb-3 text-lg">Business Hours</h4>
+                            <div class="space-y-1 text-sm">
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p>Saturday: 9:00 AM - 4:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Us Section -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-dark-gray">Why Choose Us</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="text-accent-orange mr-3">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-gray-700 font-medium">Experienced Professionals</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-accent-orange mr-3">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-gray-700 font-medium">Cheap Estimates (Adjustable if Hired)</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-accent-orange mr-3">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-gray-700 font-medium">Free Online Quotes</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-accent-orange mr-3">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                                    </svg>
+                                </div>
+                                <p class="text-gray-700 font-medium">Same-Day Quotes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-8">
+                <!-- Left Column - Logo & Business Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-accent-blue rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">E</span>
+                        </div>
+                        <h3 id="footerBusinessName" class="text-xl font-bold text-white">Epoxy Punk</h3>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        Professional epoxy flooring installation in Mississauga and the Greater Toronto Area. Transform your space with durable, beautiful floors.
+                    </p>
+                </div>
+
+                <!-- Middle Column - Services -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Residential Garage Floors</li>
+                        <li>Commercial Flooring</li>
+                        <li>Basement Floors</li>
+                        <li>Industrial Coatings</li>
+                        <li>Decorative Epoxy</li>
+                    </ul>
+                </div>
+
+                <!-- Right Column - Contact -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact</h4>
+                    <div class="space-y-3 text-gray-300">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                            </svg>
+                            <span id="footerPhone">(226) 998-9819</span>
+                        </div>
+                        <div id="footerEmailContainer" class="flex items-center space-x-2 hidden">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
+                            <span id="footerEmail"></span>
+                        </div>
+                        <div id="footerInstagramContainer" class="flex items-center space-x-2 hidden">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+                            </svg>
+                            <span id="footerInstagram"></span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                            </svg>
+                            <span>Serving Mississauga & GTA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="border-t border-gray-600 pt-8 text-center relative">
+                <p class="text-gray-400 text-sm">© 2024 Epoxy Punk</p>
+                
+                <!-- Admin Buttons (Fixed position) -->
+                <div class="fixed bottom-4 right-4 flex flex-col gap-2 z-40">
+                    <!-- Admin Settings Button (Only visible when logged in) -->
+                    <button id="adminSettingsBtn" onclick="openAdminSettings()" class="hidden bg-accent-orange hover:bg-orange-600 text-white p-3 rounded-full shadow-lg transition-colors duration-300" title="Admin Settings">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.22,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.22,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.68 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Admin Login Button -->
+                    <button onclick="openAdminLogin()" class="bg-gray-700 hover:bg-gray-600 text-white p-3 rounded-full shadow-lg transition-colors duration-300" title="Admin Login">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let allReviews = [];
+        let showingAll = false;
+        let isAdminLoggedIn = false;
+        let currentGalleryCategory = '';
+        let galleryImages = {
+            residential: [],
+            basements: [],
+            commercial: [],
+            industrial: [],
+            retail: [],
+            workshops: []
+        };
+        let originalBusinessName = 'Epoxy Punk';
+        let currentBusinessName = 'Epoxy Punk';
+        let originalHeroBackground = null;
+        let currentHeroBackground = null;
+
+        // Gallery Functions
+        function openGallery(category) {
+            currentGalleryCategory = category;
+            const modal = document.getElementById('galleryModal');
+            const title = document.getElementById('galleryTitle');
+            const adminControls = document.getElementById('adminControls');
+            
+            // Set title based on category
+            const titles = {
+                residential: 'Residential Garages Gallery',
+                basements: 'Basements Gallery',
+                commercial: 'Commercial Spaces Gallery',
+                industrial: 'Industrial Facilities Gallery',
+                retail: 'Retail Stores Gallery',
+                workshops: 'Workshops Gallery'
+            };
+            
+            title.textContent = titles[category] || 'Gallery';
+            
+            // Show admin controls if logged in
+            if (isAdminLoggedIn) {
+                adminControls.classList.remove('hidden');
+            }
+            
+            // Load gallery images
+            loadGalleryImages(category);
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGallery() {
+            const modal = document.getElementById('galleryModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function loadGalleryImages(category) {
+            const grid = document.getElementById('galleryGrid');
+            const emptyMessage = document.getElementById('emptyGallery');
+            const images = galleryImages[category] || [];
+            
+            grid.innerHTML = '';
+            
+            if (images.length === 0) {
+                emptyMessage.classList.remove('hidden');
+                return;
+            }
+            
+            emptyMessage.classList.add('hidden');
+            
+            images.forEach((image, index) => {
+                const imageDiv = document.createElement('div');
+                imageDiv.className = 'relative group';
+                imageDiv.innerHTML = `
+                    <img src="${image.url}" alt="${image.name}" class="w-full h-48 object-cover rounded-lg shadow-lg">
+                    ${isAdminLoggedIn ? `
+                        <button onclick="deleteImage('${category}', ${index})" class="absolute top-2 right-2 bg-red-500 hover:bg-red-600 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/>
+                            </svg>
+                        </button>
+                    ` : ''}
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-lg">
+                        <p class="text-sm truncate">${image.name}</p>
+                    </div>
+                `;
+                grid.appendChild(imageDiv);
+            });
+        }
+
+        function deleteImage(category, index) {
+            if (confirm('Are you sure you want to delete this image?')) {
+                galleryImages[category].splice(index, 1);
+                loadGalleryImages(category);
+            }
+        }
+
+        // Admin Functions
+        function openAdminLogin() {
+            const modal = document.getElementById('adminLoginModal');
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeAdminLogin() {
+            const modal = document.getElementById('adminLoginModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            
+            // Clear form
+            document.getElementById('adminUsername').value = '';
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('loginError').classList.add('hidden');
+        }
+
+        function handleAdminLogin(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById('adminUsername').value;
+            const password = document.getElementById('adminPassword').value;
+            const errorDiv = document.getElementById('loginError');
+            
+            // Check credentials
+            if (username === 'Kunal15' && password === 'Kunal_Epoxy15') {
+                isAdminLoggedIn = true;
+                closeAdminLogin();
+                
+                // Show admin settings button
+                document.getElementById('adminSettingsBtn').classList.remove('hidden');
+                
+                alert('Admin login successful! You can now upload and manage gallery images, change business settings, and customize the hero background.');
+            } else {
+                errorDiv.classList.remove('hidden');
+            }
+        }
+
+        // Image Upload Handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageUpload = document.getElementById('imageUpload');
+            
+            imageUpload.addEventListener('change', function(event) {
+                const files = event.target.files;
+                
+                if (files.length === 0 || !currentGalleryCategory) return;
+                
+                Array.from(files).forEach(file => {
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const imageData = {
+                                url: e.target.result,
+                                name: file.name,
+                                uploadDate: new Date().toISOString()
+                            };
+                            
+                            galleryImages[currentGalleryCategory].push(imageData);
+                            loadGalleryImages(currentGalleryCategory);
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+                
+                // Clear the input
+                event.target.value = '';
+            });
+        });
+
+        // Initialize with 3 starter reviews
+        function initializeStarterReviews() {
+            const starterReviews = [
+                {
+                    name: "Sarah Mitchell",
+                    rating: "5",
+                    text: "Absolutely amazing work! Our garage floor looks incredible and has held up perfectly for over two years. Highly recommend!",
+                    files: []
+                },
+                {
+                    name: "Mike Johnson", 
+                    rating: "5",
+                    text: "Professional service from start to finish. The team was punctual, clean, and delivered exactly what they promised. Great value!",
+                    files: []
+                },
+                {
+                    name: "Lisa Rodriguez",
+                    rating: "5", 
+                    text: "We love our new basement floor! The custom design turned out even better than we imagined. Worth every penny.",
+                    files: []
+                }
+            ];
+
+            starterReviews.forEach(review => {
+                const reviewElement = createReviewElement(review.name, review.rating, review.text, review.files);
+                allReviews.push(reviewElement);
+            });
+
+            displayReviews();
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const name = event.target.querySelector('input[type="text"]').value;
+            const projectType = event.target.querySelector('select').value;
+            
+            // Show success message
+            alert(`Thank you ${name}! We've received your ${projectType} quote request and will contact you within 24 hours with your free estimate.`);
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        function createReviewElement(name, rating, reviewText, files) {
+            const reviewDiv = document.createElement('div');
+            reviewDiv.className = 'bg-white p-8 rounded-lg shadow-lg review-item';
+            
+            // Generate stars display
+            const stars = '★'.repeat(parseInt(rating)) + '☆'.repeat(5 - parseInt(rating));
+            
+            // Get initials for avatar
+            const initials = name.split(' ').map(n => n[0]).join('').toUpperCase();
+            
+            reviewDiv.innerHTML = `
+                <div class="flex mb-4">
+                    <span class="text-accent-orange text-xl">${stars}</span>
+                </div>
+                <p class="text-gray-600 mb-6 italic">"${reviewText}"</p>
+                ${files.length > 0 ? '<p class="text-sm text-green-600 mb-4">📷 Includes project photos</p>' : ''}
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-accent-blue rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                        ${initials}
+                    </div>
+                    <div>
+                        <p class="font-semibold text-dark-gray">${name}</p>
+                        <p class="text-sm text-gray-500">Recent Customer</p>
+                    </div>
+                </div>
+            `;
+            
+            return reviewDiv;
+        }
+
+        function displayReviews() {
+            const reviewsGrid = document.getElementById('reviewsGrid');
+            const dynamicReviews = document.getElementById('dynamicReviews');
+            const seeAllContainer = document.getElementById('seeAllContainer');
+            const reviewCount = document.getElementById('reviewCount');
+            const seeAllBtn = document.getElementById('seeAllBtn');
+            
+            // Clear current display
+            reviewsGrid.innerHTML = '';
+            
+            if (allReviews.length === 0) {
+                dynamicReviews.classList.add('hidden');
+                return;
+            }
+            
+            // Show dynamic reviews section
+            dynamicReviews.classList.remove('hidden');
+            
+            // Always show first 3 reviews, then show more if "See All" is clicked
+            let reviewsToShow;
+            if (showingAll) {
+                reviewsToShow = allReviews;
+            } else {
+                reviewsToShow = allReviews.slice(0, 3);
+            }
+            
+            // Add reviews to grid
+            reviewsToShow.forEach(review => {
+                reviewsGrid.appendChild(review.cloneNode(true));
+            });
+            
+            // Update review count and button text
+            reviewCount.textContent = allReviews.length;
+            
+            // Show "See All Reviews" button only when there are more than 6 reviews
+            if (allReviews.length > 6) {
+                seeAllContainer.classList.remove('hidden');
+                seeAllBtn.textContent = showingAll ? 
+                    `Show Less` : 
+                    `See All Reviews (${allReviews.length})`;
+            } else {
+                seeAllContainer.classList.add('hidden');
+            }
+        }
+
+        function toggleAllReviews() {
+            showingAll = !showingAll;
+            displayReviews();
+            
+            // Scroll to reviews section
+            document.getElementById('dynamicReviews').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+        }
+
+        function handleReviewSubmit(event) {
+            event.preventDefault();
+            
+            const name = event.target.querySelector('input[type="text"]').value;
+            const rating = event.target.querySelector('select').value;
+            const reviewText = event.target.querySelector('textarea').value;
+            const files = event.target.querySelector('input[type="file"]').files;
+            
+            // Create new review element
+            const reviewElement = createReviewElement(name, rating, reviewText, files);
+            
+            // Add to beginning of reviews array (most recent first)
+            allReviews.unshift(reviewElement);
+            
+            // Refresh display
+            displayReviews();
+            
+            // Success message
+            alert(`Thank you ${name} for your ${rating}-star review! Your review has been posted and is now visible on our website.`);
+            
+            // Reset form
+            event.target.reset();
+            
+            // Scroll to show the reviews section
+            document.getElementById('dynamicReviews').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Smooth scrolling for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('section');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Admin Settings Functions
+        function openAdminSettings() {
+            if (!isAdminLoggedIn) {
+                alert('Please log in as admin first.');
+                return;
+            }
+            
+            const modal = document.getElementById('adminSettingsModal');
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Update form inputs with current values
+            document.getElementById('businessNameInput').value = currentBusinessName;
+            document.getElementById('phoneNumberInput').value = currentPhoneNumber;
+            document.getElementById('emailInput').value = currentEmail;
+            document.getElementById('instagramInput').value = currentInstagram;
+        }
+
+        function closeAdminSettings() {
+            const modal = document.getElementById('adminSettingsModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            
+            // Clear file input and preview
+            document.getElementById('heroBackgroundUpload').value = '';
+            document.getElementById('backgroundPreview').classList.add('hidden');
+        }
+
+        function updateBusinessName() {
+            const newName = document.getElementById('businessNameInput').value.trim();
+            
+            if (!newName) {
+                alert('Please enter a business name.');
+                return;
+            }
+            
+            currentBusinessName = newName;
+            
+            // Update all business name elements
+            document.getElementById('headerBusinessName').textContent = newName;
+            document.getElementById('footerBusinessName').textContent = newName;
+            
+            alert('Business name updated successfully!');
+        }
+
+        function updateContactInfo() {
+            const newPhone = document.getElementById('phoneNumberInput').value.trim();
+            const newEmail = document.getElementById('emailInput').value.trim();
+            const newInstagram = document.getElementById('instagramInput').value.trim();
+            
+            if (!newPhone) {
+                alert('Please enter a phone number.');
+                return;
+            }
+            
+            // Update phone number
+            currentPhoneNumber = newPhone;
+            document.getElementById('headerPhone').textContent = newPhone;
+            document.getElementById('contactPhone').textContent = newPhone;
+            document.getElementById('footerPhone').textContent = newPhone;
+            
+            // Update email
+            currentEmail = newEmail;
+            const emailContainer = document.getElementById('footerEmailContainer');
+            const emailSpan = document.getElementById('footerEmail');
+            
+            if (newEmail) {
+                emailSpan.textContent = newEmail;
+                emailContainer.classList.remove('hidden');
+            } else {
+                emailContainer.classList.add('hidden');
+            }
+            
+            // Update Instagram
+            currentInstagram = newInstagram;
+            const instagramContainer = document.getElementById('footerInstagramContainer');
+            const instagramSpan = document.getElementById('footerInstagram');
+            
+            if (newInstagram) {
+                // Add @ if not present
+                const displayInstagram = newInstagram.startsWith('@') ? newInstagram : '@' + newInstagram;
+                instagramSpan.textContent = displayInstagram;
+                instagramContainer.classList.remove('hidden');
+            } else {
+                instagramContainer.classList.add('hidden');
+            }
+            
+            alert('Contact information updated successfully!');
+        }
+
+        function uploadHeroBackground() {
+            const fileInput = document.getElementById('heroBackgroundUpload');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                alert('Please select an image file first.');
+                return;
+            }
+            
+            if (!file.type.startsWith('image/')) {
+                alert('Please select a valid image file.');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                currentHeroBackground = e.target.result;
+                applyHeroBackground(currentHeroBackground);
+                alert('Hero background updated successfully!');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function resetHeroBackground() {
+            currentHeroBackground = null;
+            applyHeroBackground(null);
+            alert('Hero background reset to original design!');
+        }
+
+        function applyHeroBackground(imageUrl) {
+            const heroBackground = document.getElementById('heroBackground');
+            
+            if (imageUrl) {
+                // Apply custom background image
+                heroBackground.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageUrl})`;
+                heroBackground.style.backgroundSize = 'cover';
+                heroBackground.style.backgroundPosition = 'center';
+                heroBackground.style.backgroundRepeat = 'no-repeat';
+                heroBackground.className = 'absolute inset-0 w-full h-full';
+            } else {
+                // Reset to original gradient background
+                heroBackground.style.backgroundImage = '';
+                heroBackground.style.backgroundSize = '';
+                heroBackground.style.backgroundPosition = '';
+                heroBackground.style.backgroundRepeat = '';
+                heroBackground.className = 'absolute inset-0 w-full h-full bg-gradient-to-r from-dark-gray via-gray-800 to-dark-gray';
+            }
+        }
+
+        // Preview background image when selected
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroBackgroundUpload = document.getElementById('heroBackgroundUpload');
+            
+            heroBackgroundUpload.addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                const preview = document.getElementById('backgroundPreview');
+                const previewImg = document.getElementById('backgroundPreviewImg');
+                
+                if (file && file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        previewImg.src = e.target.result;
+                        preview.classList.remove('hidden');
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    preview.classList.add('hidden');
+                }
+            });
+        });
+
+        // Initialize the page with starter reviews
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeStarterReviews();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97f400f485f8ac3f',t:'MTc1Nzg5NjEwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
